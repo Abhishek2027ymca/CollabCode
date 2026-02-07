@@ -40,6 +40,28 @@ which start 4 different services.
 ![image](https://github.com/user-attachments/assets/78a842e2-0c12-4423-bbf9-fbacb41997fd)
 ![image](https://github.com/user-attachments/assets/ae41bc9f-fb0b-4044-9ea2-c809df57987b)
 
+## Quick brush-up plan (Redis + Docker + Sockets)
+
+If you want to get stronger with the main stack in this project, follow this short sequence:
+
+1. **Docker fundamentals first**
+   - Understand containers, images, volumes, networks, and `docker-compose`.
+   - Practice: run `docker-compose up -d`, inspect running services, and check logs with `docker compose logs -f`.
+
+2. **Redis basics and usage patterns**
+   - Learn keys, TTL, pub/sub, caching, and queue-like workflows.
+   - Practice: connect to Redis container and try `SET`, `GET`, `EXPIRE`, and pub/sub commands using `redis-cli`.
+
+3. **Sockets and real-time communication**
+   - Understand WebSocket lifecycle (`connect`, `message`, `disconnect`) and room/channel based messaging.
+   - Practice: start the websocket service and trace how messages move between clients and backend services.
+
+4. **Project-focused walkthrough**
+   - Start the full stack with Docker.
+   - Open the frontend, create a collaborative session, and watch logs from websocket + worker services.
+   - Correlate: user action -> socket event -> Redis/pub-sub -> worker/server response.
+
+This order (Docker -> Redis -> Sockets -> project internals) usually gives the fastest confidence boost.
 
 
 
